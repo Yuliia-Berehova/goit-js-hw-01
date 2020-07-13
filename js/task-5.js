@@ -3,6 +3,8 @@ let price;
 
 if (country !== null) {
   country = country.toLowerCase();
+} else {
+  alert('Отмена пользователем!');
 }
 switch (country) {
   case 'китай':

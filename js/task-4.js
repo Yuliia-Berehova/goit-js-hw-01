@@ -5,6 +5,8 @@ let totalPrice;
 const droidsAmount = prompt('Введите количество дроидов');
 if (droidsAmount === null) {
   console.log('Отменено пользователем!');
+} else if (isNaN(droidsAmount)) {
+  console.log('Введите число!');
 } else {
   totalPrice = pricePerDroid * Number(droidsAmount);
   console.log(totalPrice);
